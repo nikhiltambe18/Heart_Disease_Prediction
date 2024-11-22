@@ -3,7 +3,7 @@ import pandas as pd
 import pickle
 
 
-model_filename = './model.pkl'  # Update the path to the correct location
+model_filename = './model/model.pkl'  # Update the path to the correct location
 
 with open(model_filename, 'rb') as file:
     model = pickle.load(file)
