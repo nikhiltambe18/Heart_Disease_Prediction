@@ -5,8 +5,8 @@ import pickle
 
 model_filename = './model/model.pkl'  # Update the path to the correct location
 
-with open(model_filename, 'rb') as file:
-    model = pickle.load(file)
+with open('model.pkl', 'wb') as file:
+    pickle.dump(trained_model, file)
 
 def main():
     st.title('Heart Disease Prediction')
